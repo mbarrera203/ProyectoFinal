@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+$Fuente: "Montserrat", sans-serif;
+body{
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    border-radius: 20px;
+}
+/*-------*/
+/* INDEX */
+/*-------*/
+.profile{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.container{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.foot-index{
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+.nav-item{
+    cursor: pointer;
+}
+/*--------*/
+/* TURNOS */
+/*--------*/
+.turnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 50px;
+    form {
+        height: 650px;
+        width: 500px;
+        padding: 20px;
+        .turnos_form {
+            background: #C6FFDD;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 20px;
+            border-radius: 20px;
+            .grupo_turnos {
+                position: relative;
+                margin: 45px;
+            }
+        }
+    }
+}
+:root {
+    --colorTextos: black;
+}
+
+.controls {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+
+    .controls:focus {
+        outline: none;
+        color: #5e5d5d;
+    }
+
+    .controls:focus {
+        outline: none;
+        color: #5e5d5d;
+    }
+}
+
+label {
+    color: #0f0d0d;
+    font-size: 19px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+
+    .controls:focus~label,
+    .controls:valid~label {
+        top: -14px;
+        font-size: 20px;
+        color: #000000;
+    }
+}
+
+.btn.btn-secondary {
+    display: block;
+    height: 40px;
+    width: 120px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    padding: 20pz;
+    color: #ebd6d6;
+    cursor: pointer;
+    border: 2px solid rgb(34, 32, 32);
+}
+
+.boton:hover {
+    background-color: rgb(207, 159, 186);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+.foot-turnos{
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+/*-----------*/
+/* CONSULTAS */
+/*-----------*/
+.consultas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 50px;
+    form {
+        height: 650px;
+        width: 500px;
+        padding: 20px;
+        .consul_form {
+            background: #C6FFDD;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 20px;
+            border-radius: 20px;
+            .grupo_consul {
+                position: relative;
+                margin: 45px;
+            }
+        }
+    }
+}
+.titulo_consul {
+    text-align: center;
+}
+
+.btn.btn-primary {
+    display: block;
+    background-color: #c6c6c6;
+    height: 40px;
+    width: 120px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    color: #3d3d3d;
+    cursor: pointer;
+    border: 2px solid rgb(153, 17, 101);
+}
+/*-------------*/
+/* INFORMACION */
+/*-------------*/
+.informacion {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-gap: 25px;
+    padding: 20px;
+}
+.h2_consul{
+    font-size: 24px;
+    text-align: center;
+}
+.h2_info {
+    font-size: 24px;
+    font-family: $Fuente;
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa_info {
+    background-image: url("./Multimedia/MAPS.png");
+    background-position: center;
+    height: 300px;
+    border: 2px solid rgb(32, 29, 29);
+    border-radius: 20px;
+    cursor: pointer;
+    .mapa_info:hover {
+        transform: scale(1.1);
+        transition: all 0.9s;
+    }
+}
+
+.info_derecha {
+    padding: 20px;
+    border: 2px solid rgb(32, 29, 29);
+    border-radius: 20px;
+
+    .info_derecha h2 {
+        text-align: center;
+        size: 22px;
+        font-family: $Fuente;
+    }
+
+    .info_derecha p {
+        font-family: $Fuente, cursive;
+        text-align: center;
+        size: 20px;
+        padding-top: 20px;
+    }
+}
+
+.fot_info {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    bottom: 20px;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+/*--------------*/
+/* TRATAMIENTOS */
+/*--------------*/
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.d-block{
+    border-radius: 20px;
+    border: 2px solid bla
+}
