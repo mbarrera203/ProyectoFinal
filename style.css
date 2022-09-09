@@ -5,12 +5,15 @@
   box-sizing: border-box;
 }
 
+/*MAPS*/
+/*MIXIN*/
+/*BODY*/
 body {
   background: #C6FFDD; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .navbar {
@@ -44,26 +47,26 @@ body {
 /*--------*/
 /* TURNOS */
 /*--------*/
-.turnos {
+.turnos, .consultas {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
   margin: 50px;
 }
-.turnos form {
+.turnos form, .consultas form {
   height: 650px;
   width: 500px;
   padding: 20px;
 }
-.turnos form .turnos_form {
+.turnos form .turnos_form, .consultas form .turnos_form {
   background: #C6FFDD; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
   border-radius: 20px;
 }
-.turnos form .turnos_form .grupo_turnos {
+.turnos form .turnos_form .grupo_turnos, .consultas form .turnos_form .grupo_turnos {
   position: relative;
   margin: 45px;
 }
@@ -75,7 +78,7 @@ body {
 .controls {
   background: none;
   color: #c6c6c6;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 10px 10px 10px;
   display: block;
   width: 100%;
@@ -140,18 +143,6 @@ label .controls:valid ~ label {
 /*-----------*/
 /* CONSULTAS */
 /*-----------*/
-.consultas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
-  margin: 50px;
-}
-.consultas form {
-  height: 650px;
-  width: 500px;
-  padding: 20px;
-}
 .consultas form .consul_form {
   background: #C6FFDD; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* Chrome 10-25, Safari 5.1-6 */
@@ -228,7 +219,7 @@ label .controls:valid ~ label {
   font-family: "Montserrat", sans-serif;
 }
 .info_derecha .info_derecha p {
-  font-family: "Montserrat", sans-serif, cursive;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   size: 20px;
   padding-top: 20px;
